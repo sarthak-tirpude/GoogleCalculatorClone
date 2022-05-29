@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+   <div class="heading">
+       <div class="textinheading">
+           Google Calculator Clone
+       </div>
+   </div>
+    <div id = "outline">
+        <div id = "historyDiv">
+            <button id = "historyBtnInsideDiv">
+                <span class = "material-icons-outlined">history</span>
+            </button>
+            <p id = "history-para">Your calculations and results appear here so that you can reuse them</p>
+        </div>
+        <div id = "result" class = "content">
+            <div id = "answer-outer-div">
+                <button id = "history">
+                    <span class="material-icons-outlined">
+                        history
+                    </span>
+                </button>
+                <div id = "current-answer"></div>  
+            </div>
+
+            
+            <div id = "current-calculation">0</div>
+        </div>
+        <div id = "calculator-buttons" class = "content">
+            <div>
+                <div id = "unit">
+                    <button id = "radian" class = "hide">Rad</button>
+                    <button id = "degree" class = "hide" disabled = true>Deg</button>
+                </div>
+                <button class = "on fact hide">x!</button>
+                <button id = "inverse" class = "on hide" >Inv</button>
+                <button class = "on sin hide">sin</button>
+                <button class = "on ln hide">ln</button>
+                <button class = "on pie hide" >&#960;</button>
+                <button class = "on cos hide">cos</button>
+                <button class = "on log hide">log</button>
+                <button class = "on exponent hide">e</button>
+                <button class = "on tan hide">tan</button>
+                <button class = "on sqrt hide">&Sqrt;</button>
+                <button class = "on ans hide">Ans</button>
+                <button class = "on big-exponent hide">EXP</button>
+                <button class = "inv power hide">x&#8319;</button>
+            </div>
+            <div>
+                <button id = "opening-braces" class = "on">(</button>
+                <button id = "closing-braces" class = "on">)</button>
+                <button id = "percent" class = "on">%</button>
+                <button id = "clear">AC</button>
+                <button class = "number on">7</button>
+                <button class = "number on">8</button>
+                <button class = "number on">9</button>
+                <button class = "operator on">&div;</button>            
+                <button class = "number on">4</button>
+                <button class = "number on">5</button>
+                <button class = "number on">6</button>
+                <button class = "operator on">&times;</button>
+                <button class = "number on">1</button>
+                <button class = "number on">2</button>
+                <button class = "number on">3</button>
+                <button class = "operator on">&minus;</button>
+                <button class = "number on">0</button>
+                <button class = "number on">.</button>
+                <button id = "equal">&equals;</button>
+                <button class = "operator on">&plus;</button>
+            </div>     
+        </div>
+    </div>
+    <div class="footer">
+        Created By : Sarthak Tirpude
+    </div>
+    
+    <script src = "script.js"></script>
+    
+</body>
+</html>
